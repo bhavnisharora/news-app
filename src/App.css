@@ -1,0 +1,14 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* navbar toggle button */
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
+}
