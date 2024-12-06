@@ -4,7 +4,9 @@ const NewsBoard = ({ category }) => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=c4b1f3a3b42f424d8adb5c574a0a8a3e`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
+      import.meta.env.VITE_API_KEY
+    }`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setArticles(data.articles));
