@@ -16,7 +16,7 @@ const NewsBoard = ({ category }) => {
         News <span className="bg-danger badge">Latest</span>
       </p>
       <div className="d-flex flex-row justify-content-center flex-wrap align-item-center ">
-        {articles.map((elem, i) => {
+        {articles?.map((elem, i) => {
           return (
             <NewsItem
               key={i}
